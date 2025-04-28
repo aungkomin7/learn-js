@@ -278,9 +278,6 @@ const product = [
 // 5. ကြိုက်တဲ့ index ကစ ကြိုက်သလောက် အခန်းအရည်အတွက် ခွဲထုတ် နိုင်တဲ့ function
 // 6. CopyArray, Modified Array, Filter Array
 
-
-
-
 // Problems
 // 3 x 3 square လေးဖန်တီးရအောင်
 // * * *
@@ -305,7 +302,7 @@ const student1Mark = [
   {
     subject: "Myanmar",
     short: "mm",
-    mark: 45,
+    mark: 35,
   },
   {
     subject: "English",
@@ -448,3 +445,6 @@ const allStudentsMark = [
 // 3. over all အောင်မြင်၊ ကျရှုံးတွက်ပေးပါ
 // 4. ကျောင်းသားအားလုံး အောင်မြင်၊ ကျရှုံးတွက် ပေးပါ
 // 5. အောင်မြင်တဲ့လူတွေဆို Distinction ပါရင် ထည့်ရည်တွက်ပေးပါ
+
+
+
