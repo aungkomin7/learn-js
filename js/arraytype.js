@@ -1,6 +1,125 @@
-console.log("Loop Practicals");
+const fruits = [
+  "Apple",
+  "Banana",
+  "Orange",
+  "Grapes",
+  "Mango",
+  "Pineapple",
+  "Strawberry",
+  "Watermelon",
+  "Cherry",
+  "Peach",
+];
 
-const points = [34, 15, 2, 52, 19, 56, 30, 57];
+//   console.log(fruits.length);
+//   console.log(fruits.toString());
+//   console.log(fruits.join(" "));
+
+//   console.log(fruits.join("-"));
+//   console.log(fruits);
+//   console.log(fruits.sort());
+//   console.log(fruits);
+//   console.log(fruits.reverse());
+//   console.log(fruits);
+
+//   console.log(Array.isArray(fruits));
+//   console.log(Array.isArray("hello"));
+
+//   console.log(fruits.includes("apple"));
+//   console.log(fruits.includes("Apple"));
+
+//   console.log(fruits.indexOf("Cherry"));
+
+// //   let st = "hello world";
+
+// //   console.log(st.search("o"));
+
+// console.log(fruits);
+// console.log(fruits.slice(2,6));
+// console.log(fruits);
+
+// console.log(fruits.splice(2,6));
+// console.log(fruits);
+
+// const num = [2, 4, 3, 1, 5, 6, 0];
+// const char = ["a", "b", "c", "d"];
+// const emoji = ["😃", "🤩", "🤑"];
+
+// const arr = num.concat(char).concat(emoji)
+
+// console.log(arr);
+
+// const sp = [...num,...char,...emoji];
+
+// console.log(sp);
+
+// console.log(fruits);
+
+// fruits.push("aaa")
+// fruits.push("bbb")
+// fruits.push("ccc")
+
+// console.log(fruits);
+
+// fruits.pop();
+
+// console.log(fruits);
+
+// fruits.unshift("xxx");
+// fruits.unshift("yyy");
+// fruits.unshift("zzz");
+
+// console.log(fruits);
+
+// fruits.shift();
+
+// console.log(fruits);
+
+// const obj1 ={
+//     studentName : "Mary",
+//     age : 18,
+//     city : "Yangon",
+// }
+
+// const car ={
+//     make : "Toyota",
+//     age : 1998,
+//     model : "Corolla",
+// }
+
+// const sp = {...obj1,...car}
+
+// console.log(sp);
+
+// console.log(fruits);
+
+// fruits.forEach((el,idx,array) => console.log(el));
+
+// fruits.map((el,idx,array) => console.log(el,idx,array))
+
+// const result = fruits.forEach((el,idx,array) => console.log(el))
+// console.log(result);
+
+// const result = fruits.map((el,idx,arr) => {
+//   console.log(el);
+//   return el.toUpperCase() +" "+ el.length;
+// })
+
+// console.log(result);
+
+// const points = [34, 15, 2, 52, 19, 56, 30, 57];
+
+// const point = points.map((el) => el + 10);
+
+// console.log(point);
+// const point = points.map((el) => el * 2);
+// console.log(point);
+
+// const point = points.map((el) => el % 2 === 0 ? "Even" : "Odd");
+// console.log(points);
+// console.log(point);
+const points = [34, 15, 2, 52, 19, 56, 30, 52, 57];
+
 const product = [
   {
     id: 1,
@@ -270,311 +389,112 @@ const product = [
   },
 ];
 
-// Problems ( Tasks )
-// 1. point စုစုပေါင်း
-// 2. number တွေပဲပါတဲ့ array ကို input အနေနဲ့ထည့်လိုက်ရင် စုစုပေါင်းပြန်ပေးနိုင်တဲ့ function
-// 3. စုံသီးသန့်၊ မသီးသန့် ခွဲပေးနိုင်တဲ့ function
-// 4. array 5ခန်း ခွဲထုတ်ပြပါ
-// 5. ကြိုက်တဲ့ index ကစ ကြိုက်သလောက် အခန်းအရည်အတွက် ခွဲထုတ် နိုင်တဲ့ function
-// 6. CopyArray, Modified Array, Filter Array
+// const result = product.map((el) => {
+// console.log(el);
+//   el.price += el.price * (el.rating.rate >= 4 ? 50 / 100 : 30 / 100);
+//   el.title = "MMS " + el.title;
 
-// console.log(points);
+//   el.rating.rate = el.rating.rate+1 >5 ? 5 : el.rating.rate+1;
 
-// Problems
-// 3 x 3 square လေးဖန်တီးရအောင်
-// * * *
-// * * *
-// * * *
-// n x n square လေးဖန်တီးရအောင်
-// 3row triangle လေးဖန်တီးရအောင်
-// *
-// * *
-// * * *
+//   return {
+//     name: el.title,
+//     price: el.price,
+//     rate: el.rating.rate,
+//   };
+// });
 
-// let x = "";
-// for(let i = 1; i <= 3; i++){
-//   x += "* * *\n"
-// }
-
-// console.log(x);
-
-// const fun = (w, h,char = "*") => {
-//   let x = "";
-//   for (let ii = 1; ii <= h; ii++) {
-//     for (let i = 1; i <= w; i++) {
-//       x += `${char} `;
-//     }
-//     x += "\n";
-//   }
-//   return x;
-// };
-
-// console.log(fun(3, 4, "A"));
-// console.log(fun(4, 5, "🤩"));
-
-// const fun = (h,char = "*") => {
-//   let x = "";
-//   for (let ii = 1; ii <= h; ii++) {
-//     for (let i = 1; i <= ii; i++) {
-//       x += `${char} `;
-//     }
-//     x += "\n";
-//   }
-//   return x;
-// };
-
-// console.log(fun(5));
-
-// let x = "";
-
-// for(let i = 1; i <= 5; i++){
-//   x += "* "
-// }
-
-// console.log(x);
-
-const marks = {
-  mm: 45,
-  en: 72,
-  math: 96,
-  chem: 87,
-  phy: 85,
-  bio: 54,
-};
-
-const student1Mark = [
-  {
-    subject: "Myanmar",
-    short: "mm",
-    mark: 35,
-  },
-  {
-    subject: "English",
-    short: "en",
-    mark: 72,
-  },
-  {
-    subject: "Mathematic",
-    short: "math",
-    mark: 96,
-  },
-  {
-    subject: "Chemistry",
-    short: "chem",
-    mark: 87,
-  },
-  {
-    subject: "Physics",
-    short: "phy",
-    mark: 85,
-  },
-  {
-    subject: "Biology",
-    short: "bio",
-    mark: 54,
-  },
-];
-
-const allStudentsMark = [
-  {
-    name: "Mg Mg",
-    marks: [
-      {
-        subject: "Myanmar",
-        short: "mm",
-        mark: 45,
-      },
-      {
-        subject: "English",
-        short: "en",
-        mark: 72,
-      },
-      {
-        subject: "Mathematic",
-        short: "math",
-        mark: 96,
-      },
-      {
-        subject: "Chemistry",
-        short: "chem",
-        mark: 87,
-      },
-      {
-        subject: "Physics",
-        short: "phy",
-        mark: 85,
-      },
-      {
-        subject: "Biology",
-        short: "bio",
-        mark: 54,
-      },
-    ],
-  },
-  {
-    name: "Kyaw Kyaw",
-    marks: [
-      {
-        subject: "Myanmar",
-        short: "mm",
-        mark: 50,
-      },
-      {
-        subject: "English",
-        short: "en",
-        mark: 34,
-      },
-      {
-        subject: "Mathematic",
-        short: "math",
-        mark: 65,
-      },
-      {
-        subject: "Chemistry",
-        short: "chem",
-        mark: 38,
-      },
-      {
-        subject: "Physics",
-        short: "phy",
-        mark: 40,
-      },
-      {
-        subject: "Biology",
-        short: "bio",
-        mark: 45,
-      },
-    ],
-  },
-  {
-    name: "Su Su",
-    marks: [
-      {
-        subject: "Myanmar",
-        short: "mm",
-        mark: 68,
-      },
-      {
-        subject: "English",
-        short: "en",
-        mark: 83,
-      },
-      {
-        subject: "Mathematic",
-        short: "math",
-        mark: 85,
-      },
-      {
-        subject: "Chemistry",
-        short: "chem",
-        mark: 90,
-      },
-      {
-        subject: "Physics",
-        short: "phy",
-        mark: 87,
-      },
-      {
-        subject: "Biology",
-        short: "bio",
-        mark: 83,
-      },
-    ],
-  },
-];
-
-// Problems
-// 1. marks, studentMark စုစုပေါင်း ရေးပြပါ
-// 2. studentMark မှဘာသာရပ်တစ်ခုစီ ကျရှံးတွက်ပေးပါကြရှုံး
-// 3. over all အောင်မြင်၊ ကျရှုံးတွက်ပေးပါ
-// 4. ကျောင်းသားအားလုံး အောင်မြင်၊ ကျရှုံးတွက် ပေးပါ
-// 5. အောင်မြင်တဲ့လူတွေဆို Distinction ပါရင် ထည့်ရည်တွက်ပေးပါ
-
-// console.log(marks);
-
-// let total = 0;
-// for (let el in marks) {
-//   console.log(el,marks[el]);
-//   total += marks[el]
-// }
-
-// console.log(total);
-
-// console.log(student1Mark);
-
-// let total = 0;
-// for (let el of student1Mark) {
-//   console.log(el.mark);
-//   total += el.mark;
-// }
-// console.log(total);
-
-// console.table(student1Mark);
-
-// const findPassOrFail = (mark) => {
-
-//   if (mark >= 40) {
-//     return "Passed";
-//   } else {
-//     return "Failed";
-//   }
-// };
-// let overAll = "all passed";
-// for (let el of student1Mark) {
-//   // console.log(el, el.mark);
-//   // if (el.mark >= 40) {
-//   //   el.result = "passed";
-//   // } else {
-//   //   el.result = "failed";
-//   //   overAll = "all failed";
-//   // }
-
-//   if (findPassOrFail(el.mark) === "Passed") {
-//     el.result = "passed"
-//   } else {
-//     el.result = "failed"
-//     overAll = "all failed"
-//   }
-// }
-
-// console.table(student1Mark);
-
-// console.log(overAll);
-
-// console.table(allStudentsMark);
-
-// for (let el of allStudentsMark) {
-//   // el.result = "aaa"
-//   el.overAll = "all passed"
-//   el.distinction = 0;
-//   for (let mark of el.marks) {
-//     console.log(mark);
-//     if (mark.mark >= 40) {
-//       mark.result = "passed";
-//     } else {
-//       mark.result = "failed";
-//       el.overAll = "all failed"
-//     }
-//     if (mark.mark >= 80) {
-//       el.distinction += 1;
-//     }
-//   }
-// }
-
-// console.table(allStudentsMark);
-
-// console.table(allStudentsMark[2].marks);
-
-
-
-
+// console.table(result);
 // console.table(product);
 
-// console.log(points);
+// console.log(fruits);
 
-// const result = points.some((el,idx,arr) => {
-//   console.log(el);
-//   return el > 150;
-// })
+// const result = fruits.filter((el) => el.length === 5);
+// const result = fruits.filter((el) => el.length !== 5);
 
 // console.log(result);
+
+// const result = product.map((p) => {
+//   // console.log(p);
+
+//   // p.price += 100;
+//   p.price += p.price * (p.rating.rate >= 4 ? 50 / 100 : 30 / 100);
+
+//   p.title = "MMS " + p.title;
+
+//   p.rating.rate = p.rating.rate + 1 > 5 ? 5 : p.rating.rate + 1;
+
+//   return {
+//     name: p.title,
+//     price: p.price,
+//     rate: p.rating.rate,
+//   };
+// });
+
+// console.table(result);
+
+// const result = fruits.filter((el) => el.length === 5);
+
+// console.log(result);
+
+// const result = points.filter((el) => el % 2 === 0);
+
+// console.log(result);
+
+// const p = product.filter((el) => el.rating.rate >= 4);
+// const p = product.filter((el) => el.price <= 50);
+
+// console.table(p);
+
+// const result = fruits.map((el) => {
+//   console.log(el);
+//   return el + " " + el.length;
+// } )
+
+// console.log(result);
+
+// const filterId = [2,8,15,17]
+
+// const result = product.filter(({ id }) => !filterId.includes(id));
+// const result = product.filter((el) => {
+// console.log(el.id);
+// return filterId.includes(el.id)
+
+// });
+
+// console.table(result);
+
+// console.log(fruits.includes("Apple"));
+
+// console.log(points.find((el) => el == 52));
+// console.log(points.findIndex((el) => el == 52));
+// const result = points.find((el) => {
+//   console.log(el);
+//   return el == 52;
+// })
+
+// console.log(typeof result);
+
+// const result = points.reduce((pv, cv) => {
+//   console.log(pv, cv);
+//   return pv + cv;
+// }, 0);
+
+// console.log(result);
+
+// const result = fruits.reduce((pv,cv) => {
+//   console.log(pv,cv);
+//   return pv + cv;
+// },"")
+
+// const result = product.reduce((pv, { price }) => {
+//   return pv + price;
+// }, 0);
+
+// console.log(result);
+
+// const result = product.reduce((pv, { title }) => pv +title, "");
+
+// console.log(result);
+
+// console.log(points.every((p) => p < 150 ));
+// console.log(points.some((p) => p > 50 ));
